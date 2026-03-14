@@ -13,7 +13,7 @@ int main() {
     island_x = rand() % 100;
     island_y = rand() % 100;
     
-    printf("🌊 ISLAND GAME 🏝️\n");
+    printf("ISLAND GAME \n");
     printf("Find and click the island to win!\n");
     printf("Island is somewhere between (0-99, 0-99)\n\n");
     
@@ -23,10 +23,10 @@ int main() {
         scanf("%d %d", &click_x, &click_y);
         
         if (click_x == island_x && click_y == island_y) {
-            printf("\n🎉 YOU WIN! Found the island in %d attempts!\n", attempts);
+            printf("\n YOU WIN! Found the island in %d attempts!\n", attempts);
             break;
         } else {
-            printf("❌ Missed! Try again.\n\n");
+            printf(" Missed! Try again.\n\n");
         }
     }
     
